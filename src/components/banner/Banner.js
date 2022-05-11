@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core';
 import Carousel from "../carousel/Carousel";
 import useStyles from "./banner-styles";
 
-const Banner = () => {
+const Banner = ({ items }) => {
   const classes = useStyles();
 
   return (
@@ -20,7 +20,9 @@ const Banner = () => {
         color="secondary">
         Get all the info regarding your favourite crypto currency
       </Typography>
-      <Carousel />
+      <div className={classes.carouselContainer}>
+        <Carousel items={items} />
+      </div>
     </div>
   );
 };
