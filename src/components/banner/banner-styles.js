@@ -4,7 +4,8 @@ const useStyles = makeStyles(theme => {
   return {
     banner: {
       background: 'url("./banner2.jpg")',
-      height: '400px'
+      height: 350,
+      marginTop: 20
     },
     carouselContainer: {
       height: "50%",

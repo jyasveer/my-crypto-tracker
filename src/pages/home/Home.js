@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getTrendingCoinsData, getCoinListData } from "../../common/api";
-import { Banner, CoinsTable, Header } from "../../components";
+import { Banner, CoinsTable } from "../../components";
 import useStyles from "./home-styles";
 import { useAppState } from "../../state/AppState";
 import { Typography } from "@material-ui/core";
@@ -63,11 +63,10 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <Header />
       <Banner items={prepareCarouselData()} />
       <div className={classes.tableArea}>
         <Typography
-          variant="h3"
+          variant="h4"
           align="center">
           Cryptocurrency Prices By Market Cap
         </Typography>

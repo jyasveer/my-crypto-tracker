@@ -1,4 +1,3 @@
-.coins-table {
-  background-color: black;
-  color: white;
+.table {
+  min-width: 650px;
 }

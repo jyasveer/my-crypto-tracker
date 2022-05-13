@@ -9,15 +9,19 @@ const Banner = ({ items }) => {
   return (
     <div className={classes.banner}>
       <Typography
-        variant="h3"
+        variant="h2"
         align="center"
-        color="primary">
+        color="white">
         Crypto Tracker
       </Typography>
       <Typography
         variant="subtitle2"
         align="center"
-        color="secondary">
+        color="secondary"
+        style={{
+          marginTop: 10,
+          marginBottom: 20
+        }}>
         Get all the info regarding your favourite crypto currency
       </Typography>
       <div className={classes.carouselContainer}>
