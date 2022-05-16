@@ -1,11 +1,11 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import './App.css';
 import { CoinDetails, Home } from './pages';
-import 'react-alice-carousel/lib/alice-carousel.css';
 import { AppStateProvider } from './state/AppState';
 import { Header } from './components';
-import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
   App: {

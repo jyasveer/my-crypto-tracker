@@ -8,7 +8,6 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { useAppState } from '../../state/AppState';
 import { useNavigate } from 'react-router-dom';
-import { TextareaAutosize, TextField } from '@material-ui/core';
 import {
   firstColumnCellStyle,
   headerStyleObject,

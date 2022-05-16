@@ -15,7 +15,7 @@ export const getCoinData = async (id) => {
   return data;
 }
 
-export const getChartData = async (id, currency, days) => {
+export const getChartData = async (id, currency = 'INR', days = 1) => {
   const { data } = await axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency}&days=${days}`);
   return data;
 }

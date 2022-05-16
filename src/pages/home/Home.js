@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getTrendingCoinsData, getCoinListData } from "../../common/api";
+import { getTrendingCoinsData, getCoinListData } from "../../config/api";
 import { Banner, CoinsTable } from "../../components";
 import useStyles from "./home-styles";
 import { useAppState } from "../../state/AppState";
